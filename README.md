@@ -1,13 +1,8 @@
-Опис проблема:
-Потребно је генерисати псеудо насумичану шифру која ће бити састављена од насумичног броја слова и бројева. Ова шифра ће при сваком излазу програма имати другу расподелу задатог скупа бројева и знакова и дужину онлику колика је задата од стране корисника. 
-За наше потребе нам не треба прилично насумичан код јер га не користимо у криптографији, не користимо га за статистичко истраживање нити за креирање симулатора у некој видео игри. Потребан нам је довољно (псеудо) насумичан код и зато ћемо да се потрудимо да нам код буде униформно распоређен (да сви знакови имају једнаку вероватноћу појављивања) и да не буде детерминистички тј. да поновним покретањем наш програм нема исто решење.
-Псеудо насумичан генератор бројева
-Компјутерски програм никада не може да створи насумичан број, увек је крајњи број заснован на некој математичкој функцији и на унетим подацима. Постоје јако креативни начини уношења података који ће бити обрађивани у програму: 
-•	Мерење функција хардвера у компјутеру, 
-•	Мерење атмосферске акустике , 
-•	SOCR  садржи бројне интерактивне активности и демонстрације генерисања случајних бројева употребом Јава аплета, 
-•	Квантна Оптичка Група  (engl. The Quantum Optics Group) на ANY генерише случајне бројеве пореклом из квантног вакуума. Mожете скинути примерак случајних бројева посетом њихове странице истраживања квантних генератора случајних бројева
-•	Quantum Random Bit Generator Service на Институту Руђер Бошковић прикупља случајност из квантног процеса емисије фотона у полупроводницима. Они обезбеђују разноврсне начине прикупљања податакам, укључујуци и датотеке заглавља за неколико програмских језика.
-•	Група на технолошком универзитету Taiyuan генерише случајне бројеве из хаотичног ласера. Узорци случајних бројева доступни су у њиховој служби за генерисање физичких случајних бројева.
-У C++ постоје разни начини да се добију не најбољи псеудо насумични бројеви коришћењем библиотеке  <cstdlib> и функцијe rand() или коришћењем boost  библиотеке или пак на неки други начин.
-У овом конкретно програму нису нам потребни наручито насумични бројеви.
+First problem description: 
+Generating a pseudo-random code composed of a random number of letters and numbers is necessary. This code will have a different distribution of the given set of numbers and characters and a length specified by the user at each program output. For our purposes, we do not need relatively random code because we do not use it in cryptography, we do not use it for statistical research, or we do not use it to create simulators in a video game. We need a sufficiently (pseudo) random code, and that's why we will try to ensure that the code is uniformly distributed (so that all characters have the same probability of occurrence) and that it is not deterministic, i.e., that restarting our program does not have the same solution. Pseudo Random Number Generator A computer program can never generate a random number;  the final number is always based on some mathematical function and the input data. There are very creative ways of entering data that will be processed in the program: 
+• Measurement of hardware functions in a computer, 
+• Measurement of atmospheric acoustics 
+• SOCR contains numerous interactive activities and demonstrations of random number generation using Java applets, 
+• The Quantum Optics Group on ANY: generates random numbers originating from the quantum vacuum. Someone can download a random number sample by visiting their quantum random number generator research page 
+• Quantum Random Bit Generator Service at the Ruđer Bošković Institute collects randomness from the quantum process of photon emission in semiconductors. They provide a variety of data collection methods, including header files for several programming languages. 
+• A group at the Taiyuan University of Technology generates random numbers from a chaotic laser. Sample random numbers are available from their physical random number generator service. In C++, there are various ways to get "not the best" pseudo-random numbers using the library and the rand() function, the boost library, or some other way. In this particular program, we do not need especially random numbers.
