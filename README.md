@@ -1,4 +1,4 @@
-### First problem description: 
+#### First problem description: 
 Generating a pseudo-random code composed of a random number of letters and numbers is necessary. This code will have a different distribution of the given set of numbers and characters and a length specified by the user at each program output. For our purposes, we do not need relatively random code because we do not use it in cryptography, we do not use it for statistical research, or we do not use it to create simulators in a video game. We need a sufficiently (pseudo) random code, and that's why we will try to ensure that the code is uniformly distributed (so that all characters have the same probability of occurrence) and that it is not deterministic, i.e., that restarting our program does not have the same solution. Pseudo Random Number Generator A computer program can never generate a random number;  the final number is always based on some mathematical function and the input data. There are very creative ways of entering data that will be processed in the program:
 - Measurement of hardware functions in a computer, 
 - Measurement of atmospheric acoustics 
